@@ -8,5 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 9050
 
-# Command to run the Uvicorn server
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "9050"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:9050", "app:app"]
