@@ -1,0 +1,50 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.ui.container {
+    margin-top: 50px;
+}
+
+.ui.segment {
+    background-color: #2c2c2c !important;
+}
+
+.ui.form input {
+    background-color: #2c2c2c !important;
+    color: white !important;
+}
+
+.ui.blue.button,
+.ui.red.button,
+.ui.green.button,
+.ui.yellow.button {
+    background-color: #2185d0 !important;
+    color: white !important;
+}
+
+.ui.button:hover {
+    opacity: 0.8;
+}
+
+.ui.header {
+    color: white !important;
+}
+
+a {
+    color: #2185d0;
+}
+
+a:hover {
+    color: #1678c2;
+}
+
+.ui.label {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+label {
+    color: white !important;
+}
