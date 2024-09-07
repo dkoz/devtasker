@@ -1,4 +1,4 @@
-# Dev Tracker App
+# DevTasker
  This is a simple development tracker based on [Patrickloeber](https://github.com/patrickloeber) todo python app.
 
 ## Features
@@ -6,7 +6,7 @@
  - Add, delete and edit tasks on the list to keep track of progress.
  - All data stored locally.
 
-## Setup
+## Setup (Pythong VENV)
  Quick setup guide for the app.
  1. Create the python virtual environment.
  ```bash
@@ -32,3 +32,16 @@
  ```bash
  python main.py
   ```
+
+## Setup (Docker)
+ Setup guide of building and running the DevTasker app.
+
+ 1. Build the docker image.
+ ```bash
+ docker build -t dev-tasker .
+ ```
+
+ 2. Run the docker container.
+ ```bash
+ docker run -d -p 9050:9050 --name dev-tasker dev-tasker
+ ```
