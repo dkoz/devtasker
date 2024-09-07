@@ -25,6 +25,7 @@
  client_secret='client secret'
  redirect_url='call back url'
  discord_id='your discord id'
+ secret_flask_key='your secret key'
  ```
 
  3. Run the environment.

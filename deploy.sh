@@ -22,6 +22,6 @@ if [ "$(docker ps -a -q -f name=$CONTAINER_NAME)" ]; then
 fi
 
 echo "Running the new container..."
-docker run -d -p $PORT:$PORT --name $CONTAINER_NAME $DOCKER_IMAGE
+docker run -d -p $PORT:$PORT -v $(pwd)/instance:/app/instance --name $CONTAINER_NAME $DOCKER_IMAGE
 
 echo "Dev Tasker deployment complete."

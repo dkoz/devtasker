@@ -5,7 +5,8 @@ import os
 import settings as settings
 
 app = Flask(__name__, static_folder='assets')
-app.secret_key = os.urandom(24)
+# Added optional secret key to fix cookies issue
+app.secret_key = settings.secret_flask_key
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
